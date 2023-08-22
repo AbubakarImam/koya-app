@@ -1,7 +1,7 @@
 const ContactModal = () => {
     return (
         <section className="py-14 bg-white mb-10">
-            <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+            <div className="max-w-4xl mx-auto  px-4 md:px-8">
                 <div className="max-w-lg mx-auto space-y-8 text-center">
                     <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
                     <form>

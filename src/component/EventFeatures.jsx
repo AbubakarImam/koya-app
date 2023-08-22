@@ -20,7 +20,7 @@ const EventFeatures = () => {
     ];
 
     return (
-        <section className="flex flex-col space-y-4 mt-4">
+        <section className="flex flex-col max-w-4xl mx-auto  space-y-4 mt-4">
             <h2 className="text-white font-inter font-medium text-5xl ml-8 mb-5">Events</h2>
             <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                 {events.map(({ id, img, users, number, text }) => {
@@ -36,8 +36,8 @@ const EventFeatures = () => {
                                 <img src={img}
                                     alt="img"
                                     className="w-full h-full object-fit" />
-                                <span className="absolute bottom-6 left-4 rounded-lg bg-[#010F2A] px-1 py-1 text-white">
-                                    <span className="inline-block w-2 h-2 bg-[#FBFF3B] rounded-full mr-2"></span>
+                                <span className="absolute bottom-2 left-0 rounded-lg bg-[#010F2A] px-1 py-1 text-white text-xs">
+                                    <span className="inline-block w-1 h-1 bg-[#FBFF3B] rounded-full mr-1"></span>
                                     <p className="text-[#FBFF3B] inline-block">{users}</p> people attending
                                 </span>
                             </div>

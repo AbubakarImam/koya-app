@@ -19,7 +19,7 @@ const Event = () => {
     return (
         <div>
             <section className="py-14" style={sectionStyle}>
-                <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+                <div className="max-w-4xl mx-auto  px-4 md:px-8">
                     <div className="max-w-lg mx-auto text-center">
                         <h4 className="text-white py-2 px-4 border border-white rounded-lg inline-block mb-4 text-xl font-semibold">
                             Events
@@ -33,7 +33,7 @@ const Event = () => {
                 </div>
             </section>
             <section className="py-14">
-                <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+                <div className="max-w-4xl mx-auto  px-4 md:px-8">
                     <div className="max-w-lg mx-auto px-8 space-y-10 text-center text-white">
                         <div className="">
                             <img src={image} alt="" />
@@ -74,7 +74,7 @@ const Event = () => {
                 </div>
             </section>
             <section className="py-14" style={sectionStyle}>
-                <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+                <div className="max-w-4xl mx-auto  px-4 md:px-8">
                     <div className="max-w-lg mx-auto space-y-8 text-center">
                         <h4 className="text-white py-2 px-4 inline-block mb-4 text-4xl font-semibold">
                             Submit Events

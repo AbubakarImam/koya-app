@@ -14,7 +14,7 @@ function HeroSection() {
     };
 
     return (
-        <div className="flex flex-col md:flex-row md:items-center gap-4 justify-between md:px-20">
+        <div className="flex flex-col md:flex-row md:items-center max-w-4xl gap-4 justify-between mx-auto">
             <div className="md:w-1/2 w-4/5">
                 <p className="text-lg md:text-4xl font-bold font-poppins text-white mb-6">
                     Discover a world of knowledge,
@@ -29,11 +29,11 @@ function HeroSection() {
                     Get Whitelisted
                 </button>
             </div>
-            <div className="md:w-1/2 hidden">
+            <div className="md:w-1/2 md:flex md:items-end hidden">
                 <img
                     src={image}
                     alt="First Image"
-                    className="w-1/2"
+                    className="md:w-2/3 md:flex md:items-end md:justify-content-end"
                 />
             </div>
             {isModalOpen && <WhitelistModal onClose={closeModal} />}

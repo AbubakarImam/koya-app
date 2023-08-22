@@ -26,12 +26,12 @@ const Navbar = () => {
         <header className="border-b w-full md:static md:text-sm md:border-none">
             <div className="items-center px-4 py-2 max-w-screen-xl mx-auto md:flex md:px-8">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                    <a href="#">
+                    <a href="/">
                         <img
-                            src={logo} className='lightgray'
+                            src={logo} className=''
                             width={120}
                             height={50}
-                            alt="Float UI logo"
+                            alt="logo"
                         />
                     </a>
                 </div>
