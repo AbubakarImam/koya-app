@@ -26,15 +26,16 @@ const ChallengeFeatures = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                 {challenges.map(({ id, img, users, number, text }) => {
                     return (
-                        <div
+                        <Link to="/challenge"
                             key={id}
-                            className="rounded-[2.5rem] w-full md:w-1/2 overflow-hidden bg-[#052570] space-y-4 px-5 py-6"
+                            className="rounded-[2.5rem] w-4/5 mx-auto md:w-1/2 overflow-hidden bg-[#052570] space-y-4 px-5 py-6 
+                            hover:shadow-md transition-transform transform hover:scale-105"
                         >
                             <div className="h-3/5 w-full relative">
                                 <img src={img}
                                     alt="img"
                                     className="w-full h-full object-fit" />
-                                <span className="absolute bottom-2 left-4 rounded-lg bg-[#010F2A] px-4 py-1 text-white">
+                                <span className="absolute -bottom-1 -left-2 md:bottom-2 md:left-4 rounded-lg bg-[#010F2A] px-4 py-1 text-[12px] md:text-[10px] text-white">
                                     <span className="inline-block w-2 h-2 bg-[#FBFF3B] rounded-full mr-2"></span>
                                     <p className="text-[#FBFF3B] inline-block">{users}</p> users
                                 </span>
@@ -45,7 +46,7 @@ const ChallengeFeatures = () => {
                                     <h4 className="font-semibold">{text}</h4>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     );
                 })}
             </div>

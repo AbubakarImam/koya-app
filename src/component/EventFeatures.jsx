@@ -25,9 +25,10 @@ const EventFeatures = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                 {events.map(({ id, img, users, number, text }) => {
                     return (
-                        <div
+                        <Link to="/event"
                             key={id}
-                            className="rounded-[2.5rem] w-full md:w-1/2 overflow-hidden bg-[#052570] px-5 py-6"
+                            className="rounded-[2.5rem] w-full md:w-1/2 overflow-hidden bg-[#052570] px-5 py-6
+                            hover:shadow-md transition-transform transform hover:scale-105"
                         >
                             <div className="h-3/5 w-full relative">
                                 <span className="absolute top-4 left-6 rounded-lg py-1 px-1 text-white bg-[#010F2A]">
@@ -47,7 +48,7 @@ const EventFeatures = () => {
                                     <h4 className="font-semibold">{text}</h4>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     );
                 })}
             </div>
