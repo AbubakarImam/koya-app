@@ -25,7 +25,7 @@ const Event = () => {
                             Events
                         </h4>
                         <blockquote>
-                            <p className="text-white text-2xl font-normal font-inter">
+                            <p className="text-white text-base font-normal font-inter">
                                 Join a vibrant community of learners, connect with like-minded individuals, engage in in-person sessions, virtual workshops, and other interactive sessions led by ecosystem and industry experts, renowned educators, and inspiring speakers, and have the opportunity to receive NFT as proof of attendance post-events.
                             </p>
                         </blockquote>

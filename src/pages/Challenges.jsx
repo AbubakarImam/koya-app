@@ -21,7 +21,7 @@ const Challenges = () => {
                             CHALLENGE
                         </h4>
                         <blockquote>
-                            <p className="text-white text-2xl font-normal font-inter">
+                            <p className="text-white text-base font-normal font-inter">
                                 Challenge yourself with our interactive and engaging learning challenges, from building widgets
                                 to components at the top of bOS, and other learning objectives. Sharpen your skills in building
                                 on BOS, expand your knowledge, and push the boundaries of your capabilities.
