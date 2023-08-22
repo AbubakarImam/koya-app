@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #010F2A;
+  font-family: 'Poppins', sans-serif;
+}
+
+.folder {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  background: url('your-image-url.jpg') center center no-repeat;
+  background-size: cover;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  margin-bottom: -8px;
+  margin-top: 12px;
+}
+
+.folder:before {
+  content: '';
+  width: 50%;
+  height: 0.2em;
+  background-color: transparent;
+  position: absolute;
+  top: 0.2em;
+  left: 0px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #708090;
+}
