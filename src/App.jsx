@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Event from "./pages/Event";
 import Challenges from "./pages/Challenges"
 import Navbar from "./component/navbar";
-import Footer from "./component/navbar";
+import Footer from "./component/footer";
 const App = () => {
   return (
     <>
