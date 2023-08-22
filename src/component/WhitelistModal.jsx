@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { AiOutlineClose } from "react-icons/ai";
 import { db } from "../firebase";
 import firebase from 'firebase/app';
-import 'firebase/firestore';
 
 
 function WhitelistModal({ onClose }) {
