@@ -28,7 +28,7 @@ const ChallengeFeatures = () => {
                     return (
                         <div
                             key={id}
-                            className="rounded-[2.5rem] w-full md:w-1/2 overflow-hidden bg-[#052570] px-5 py-6"
+                            className="rounded-[2.5rem] w-full md:w-1/2 overflow-hidden bg-[#052570] space-y-4 px-5 py-6"
                         >
                             <div className="h-3/5 w-full relative">
                                 <img src={img}
