@@ -1,16 +1,33 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { AiOutlineClose } from "react-icons/ai"; // Import the close icon
+import { AiOutlineClose } from "react-icons/ai";
+import { db } from "../firebase";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+
 
 function WhitelistModal({ onClose }) {
     const [email, setEmail] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Add your logic here for handling the form submission (e.g., sending the email).
-        // You can use the 'email' state variable to access the entered email.
-        // Close the modal when done.
-        onClose();
+
+        try {
+            // Save the email to Firestore
+            await db.collection('emails').add({
+                email: email,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            });
+
+            // Clear the email input
+            setEmail('');
+
+            // Close the modal when done.
+            onClose();
+        } catch (error) {
+            // Handle errors if needed
+            console.error("Error adding document: ", error);
+        }
     };
 
     return (
