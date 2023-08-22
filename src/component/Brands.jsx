@@ -20,7 +20,7 @@ const Brands = () => {
     ]
     return (
         <section className="mt-4 max-w-4xl mx-auto ">
-            <h2 className="text-white font-inter font-medium text-5xl ml-8 mb-5">Meet Our Partners</h2>
+            <h2 className="text-white font-inter font-medium text-2xl md:text-5xl ml-8 mb-5">Meet Our Partners</h2>
             <div className="grid grid-cols-2 gap-8 md:grid-cols-4 items-center">
                 {brands.map(({ logo, index, url }) => {
                     return (

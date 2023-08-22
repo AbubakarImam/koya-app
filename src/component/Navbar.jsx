@@ -39,7 +39,7 @@ const Navbar = () => {
                         />
                     </a>
                     <div className="md:hidden">
-                        <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+                        <button className="text-white outline-none p-2 rounded-md focus:border-gray-400 focus:border"
                             onClick={() => setState(!state)}
                         >
                             {
@@ -69,6 +69,11 @@ const Navbar = () => {
                                 )
                             })
                         }
+                        <div className="flex flex-col md:hidden items-baseline mb-2 justify-evenly md:items-start text-white space-y-2">
+                            <a href="#" className="text-white hover:text-indigo-600">About Koya</a>
+                            <a href="#" className="text-white hover:text-indigo-600">Resources</a>
+                            <a href="#" className="text-white hover:text-indigo-600">Tools</a>
+                        </div>
                         <div className='space-y-3 items-center gap-x-6 md:flex md:space-y-0'>
                             <li>
                                 <button

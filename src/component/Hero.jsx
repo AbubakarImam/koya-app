@@ -14,8 +14,8 @@ function HeroSection() {
     };
 
     return (
-        <div className="flex flex-col md:flex-row md:items-center max-w-4xl gap-4 justify-between mx-auto">
-            <div className="md:w-1/2 w-4/5">
+        <div className="flex items-center max-w-4xl gap-4 justify-between mx-auto">
+            <div className="w-1/2">
                 <p className="text-lg md:text-4xl font-bold font-poppins text-white mb-6">
                     Discover a world of knowledge,
                     growth, and connection on Koya,
@@ -29,7 +29,7 @@ function HeroSection() {
                     Get Whitelisted
                 </button>
             </div>
-            <div className="md:w-1/2 md:flex md:items-end hidden">
+            <div className="w-1/2 md:flex md:items-end">
                 <img
                     src={image}
                     alt="First Image"

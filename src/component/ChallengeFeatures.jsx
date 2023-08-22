@@ -22,7 +22,7 @@ const ChallengeFeatures = () => {
 
     return (
         <section className="flex flex-col max-w-4xl mx-auto space-y-4 mt-4">
-            <h2 className="text-white font-inter font-medium text-5xl ml-8 mb-5">Challenges</h2>
+            <h2 className="text-white font-inter font-medium text-2xl md:text-5xl ml-8 mb-5">Challenges</h2>
             <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                 {challenges.map(({ id, img, users, number, text }) => {
                     return (
@@ -40,7 +40,7 @@ const ChallengeFeatures = () => {
                                 </span>
                             </div>
                             <div className="h-2/5 w-full py-4 px-4">
-                                <div className="text-left  text-white text-3xl">
+                                <div className="text-left  text-white text-lg md:text-3xl">
                                     <p className="mb-4">{number} Challenges</p>
                                     <h4 className="font-semibold">{text}</h4>
                                 </div>
