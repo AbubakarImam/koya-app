@@ -1,10 +1,9 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { AiOutlineClose } from "react-icons/ai";
+
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase";
-
-import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
-
 
 function WhitelistModal({ onClose }) {
     const [email, setEmail] = useState('');
@@ -13,14 +12,16 @@ function WhitelistModal({ onClose }) {
         e.preventDefault();
 
         try {
-            // Reference to the document in the 'emails' collection
-            const emailDocRef = doc(db, 'emails', email);
+            // Reference to the 'emails' collection
+            const emailsCollection = collection(db, 'emails');
 
-            // Set the data for the document
-            await setDoc(emailDocRef, {
+            // Add a new document to the 'emails' collection
+            await addDoc(emailsCollection, {
                 email: email,
                 timestamp: serverTimestamp(),
             });
+
+            console.log('Document written with ID: ', emailsCollection.id);
 
             // Clear the email input
             setEmail('');
@@ -32,7 +33,6 @@ function WhitelistModal({ onClose }) {
             console.error("Error adding document: ", error);
         }
     };
-
 
     return (
         <div className="fixed inset-0 flex items-center justify-center z-50">

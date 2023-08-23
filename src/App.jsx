@@ -4,6 +4,7 @@ import Event from "./pages/Event";
 import Challenges from "./pages/Challenges"
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+
 const App = () => {
   return (
     <>

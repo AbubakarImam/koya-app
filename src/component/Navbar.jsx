@@ -6,8 +6,8 @@ const Navbar = () => {
 
 
     const navigation = [
-        { title: "About", path: "#faqs" },
-        { title: "FAQs", path: "#faqs" },
+        { title: "Challenges", path: "/challenge" },
+        { title: "Event", path: "/event" },
     ];
 
     const handleGetAppClick = () => {

@@ -8,6 +8,10 @@ import ContactModal from "../component/ContactModal";
 const Event = () => {
 
     const [showForm, setShowForm] = useState(false);
+    const closeForm = () => {
+        setShowForm(false);
+    };
+
 
     const sectionStyle = {
         backgroundImage: `url(${pattern})`,
@@ -94,7 +98,7 @@ const Event = () => {
                 </div>
             </section>
             {showForm && (
-                <ContactModal />
+                <ContactModal onClose={closeForm} />
             )}
         </div>
     )
