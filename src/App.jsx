@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home";
 import Event from "./pages/Event";
 import Challenges from "./pages/Challenges"
-import Navbar from "./component/Navbar";
+import Navbar from "./component/Header";
 import Footer from "./component/Footer";
 
 import { ToastContainer } from "react-toastify";

@@ -17,7 +17,7 @@ function HeroSection() {
         <div className="flex items-center max-w-4xl gap-4 justify-between mx-2 md:mx-auto mt-8">
             <div className="w-3/5">
                 <p className="text-[15px] md:text-4xl font-bold font-poppins text-white mb-3 md:mb-6">
-                    Discover a world of knowledge,
+                    Discover a world of blockchain knowledge,
                     growth, and connection on Koya,
                     the premier learning platform
                     designed to empower learners

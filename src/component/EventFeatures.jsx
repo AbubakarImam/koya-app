@@ -36,7 +36,7 @@ const EventFeatures = () => {
                         <Link to="/event"
                             key={id}
                             className="rounded-3xl overflow-hidden bg-[#052570] md:px-4 py-2
-                            flex flex-col w-[70%] h-[12rem] mx-auto md:h-full md:w-full 
+                            flex justify-between flex-col w-[70%] h-[12rem] mx-auto md:h-full md:w-full 
                             hover:shadow-md transition-transform transform hover:scale-105"
                         >
                             <div className="h-[60%] w-[90%] md:w-full md:h-full mx-auto relative">
@@ -46,13 +46,13 @@ const EventFeatures = () => {
                                 <img src={img}
                                     alt="img"
                                     className="w-full h-full object-fill" />
-                                <span className="hidden md:block absolute md:-left-[3px] md:bottom-[2px] text-[7px] 
+                                <span className="md:block absolute md:-left-[3px] md:bottom-[2px] text-[7px] 
                                 rounded-lg bg-[#D9D9D94A] px-1 py-1 text-white">
                                     <span className="inline-block w-1 h-1 bg-[#FBFF3B] rounded-full mr-1"></span>
                                     <p className="text-[#FBFF3B] inline-block">{users}</p> people attending
                                 </span>
                             </div>
-                            <div className="h-2/5 w-full md:pt-4 px-4 md:px-0">
+                            <div className="w-full md:pt-4 px-4 md:px-0">
                                 <div className="text-left  text-white font-inter text-[10px] md:text-base">
                                     <p className="md:mb-2 font-normal">{number}</p>
                                     <h4 className="font-semibold">{text}</h4>

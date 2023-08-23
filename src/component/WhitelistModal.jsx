@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase";
 import { toast } from "react-toastify";
+import emailjs from "emailjs-com";
 
 function WhitelistModal({ onClose }) {
     const [email, setEmail] = useState('');
@@ -27,6 +28,23 @@ function WhitelistModal({ onClose }) {
 
             // Clear the email input
             setEmail('');
+
+
+            // Use emailjs to send the email
+            emailjs.send(
+                "service_4o6d5hr",
+                "template_xvf49vp",
+                { to_email: email },
+                "PWmQMvHE84NaX66OO"
+            ).then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+
 
             // Close the modal when done.
             onClose();

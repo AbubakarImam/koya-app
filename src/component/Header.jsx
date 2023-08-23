@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"
 import logo from '../assets/koyalogo.svg'
 const Navbar = () => {
 
     const [state, setState] = useState(false)
+    const navigate = useNavigate();
 
 
     const navigation = [

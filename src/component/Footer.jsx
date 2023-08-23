@@ -27,13 +27,13 @@ const Footer = () => {
                 <div className="flex items-center md:flex-col md:items-start text-white space-y-1 md:space-y-4">
                     <h6 className="md:text-xl font-bold font-inter">Social</h6>
                     <div className="flex space-x-2 md:space-x-4">
-                        <a href="#" className="text-white md:text-4xl">
+                        <a href="https://twitter.com/usekoya" className="text-white md:text-4xl">
                             <FaTwitterSquare />
                         </a>
-                        <a href="#" className="text-white md:text-4xl">
+                        <a href="https://t.me/usekoya" className="text-white md:text-4xl">
                             <FaTelegram />
                         </a>
-                        <a href="#" className="text-white md:text-4xl">
+                        <a href="https://linkedin.com/company/usekoya" className="text-white md:text-4xl">
                             <FaLinkedin />
                         </a>
                         <a href="#" className="text-white md:text-4xl">
