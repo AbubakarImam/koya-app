@@ -4,6 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase";
+import { toast } from "react-toastify";
 
 function WhitelistModal({ onClose }) {
     const [email, setEmail] = useState('');
@@ -20,6 +21,7 @@ function WhitelistModal({ onClose }) {
                 email: email,
                 timestamp: serverTimestamp(),
             });
+            toast.success("Succesfully whitelisted");
 
             console.log('Document written with ID: ', emailsCollection.id);
 
@@ -30,6 +32,7 @@ function WhitelistModal({ onClose }) {
             onClose();
         } catch (error) {
             // Handle errors if needed
+            toast.error("Error encountered: " + error.text)
             console.error("Error adding document: ", error);
         }
     };

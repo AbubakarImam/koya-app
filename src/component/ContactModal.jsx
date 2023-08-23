@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import PropTypes from "prop-types";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 const ContactModal = ({ onClose }) => {
     const form = useRef();
 
@@ -13,8 +14,14 @@ const ContactModal = ({ onClose }) => {
             form.current,
             "PWmQMvHE84NaX66OO",
         ).then(
-            result => console.log(result.text),
-            error => console.log(error.text)
+            (result) => {
+                toast.success("You have succesfully contacted the Koya team");
+                console.log(result.text);
+            },
+            (error) => {
+                toast.error("Error encountered: " + error.text)
+                console.log(error.text);
+            }
         );
 
         e.target.reset();

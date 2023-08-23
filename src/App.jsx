@@ -5,6 +5,9 @@ import Challenges from "./pages/Challenges"
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 const App = () => {
   return (
     <>
@@ -17,6 +20,18 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   )
 }

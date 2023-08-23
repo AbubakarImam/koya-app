@@ -27,9 +27,9 @@ const Navbar = () => {
 
 
     return (
-        <header className={`pb-5 md:text-sm ${state ? "shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-2 md:mt-0" : ""}`}>
-            <div className="md:items-center justify-between flex flex-col md:flex-row px-4 py-2 max-w-screen-xl mx-auto md:px-8">
-                <div className="flex items-center justify-between py-5 md:block">
+        <header className={`pb-5 bg-[#01174] md:text-sm ${state ? "shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mt-0 mb-72" : ""}`}>
+            <div className="fixed top-0 right-0 left-0 w-full bg-[#011741] z-50 md:items-center justify-between flex flex-col md:flex-row px-1 pt-2 mb-5 min-w-full mx-auto">
+                <div className="flex items-center justify-between py-1 md:block">
                     <a href="/">
                         <img
                             src={logo} className=''
