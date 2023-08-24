@@ -13,7 +13,7 @@ const Challenges = () => {
     };
 
     return (
-        <div>
+        <div className="my-6">
             <section className="py-14" style={sectionStyle}>
                 <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                     <div className="max-w-lg mx-auto text-center">

@@ -24,10 +24,10 @@ const Footer = () => {
                 </div>
 
                 {/* Right Section (Social Links) */}
-                <div className="flex items-center md:flex-col md:items-start text-white space-y-1 md:space-y-4">
+                <div className="flex items-center md:flex-col md:items-start text-white space-x-4 md:space-x-0 space-y-1 md:space-y-4">
                     <h6 className="md:text-xl font-bold font-inter">Social</h6>
                     <div className="flex space-x-2 md:space-x-4">
-                        <a href="https://twitter.com/usekoya" className="text-white md:text-4xl">
+                        <a href="#" className="text-white md:text-4xl">
                             <FaTwitterSquare />
                         </a>
                         <a href="https://t.me/usekoya" className="text-white md:text-4xl">

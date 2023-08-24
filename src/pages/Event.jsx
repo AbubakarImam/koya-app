@@ -8,6 +8,11 @@ import ContactModal from "../component/ContactModal";
 const Event = () => {
 
     const [showForm, setShowForm] = useState(false);
+
+    const toggleContactForm = () => {
+        setShowForm(!showForm);
+    };
+
     const closeForm = () => {
         setShowForm(false);
     };
@@ -21,7 +26,7 @@ const Event = () => {
     };
 
     return (
-        <div>
+        <div className="my-6">
             <section className="py-14" style={sectionStyle}>
                 <div className="max-w-4xl mx-auto  px-4 md:px-8">
                     <div className="max-w-lg mx-auto text-center">
@@ -88,8 +93,8 @@ const Event = () => {
                                 Submit your event if you want to be featured on the KOYA
                             </p>
                         </blockquote>
-                        <button
-                            onClick={() => setShowForm(!showForm)}
+                        <button id='contact'
+                            onClick={() => toggleContactForm()}
                             className="px-12 py-3 text-black bg-white rounded-full text-2xl font-semibold font-inter"
                         >
                             Contact Us Now

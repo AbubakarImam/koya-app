@@ -1,8 +1,12 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
+import { useNavigate } from 'react-router-dom';
 import logo from '../assets/koyalogo.svg'
-const Navbar = () => {
 
+
+const Navbar = ({ toggleContactForm }) => {
     const [state, setState] = useState(false)
+    const navigate = useNavigate();
 
 
     const navigation = [
@@ -77,6 +81,18 @@ const Navbar = () => {
                         <div className='space-y-3 items-center gap-x-6 md:flex md:space-y-0'>
                             <li>
                                 <button
+                                    onClick={() => {
+                                        navigate("/contact", { replace: true }); // Navigate to the contact form route
+                                        toggleContactForm(); // Toggle the contact form visibility (if needed)
+                                    }}
+                                    className="block py-3 px-4 font-medium text-center text-black bg-white hover:bg-indigo-500
+                                     active:bg-indigo-700 active:shadow-none rounded shadow md:inline"
+                                >
+                                    Contact Us
+                                </button>
+                            </li>
+                            <li>
+                                <button
                                     onClick={handleGetAppClick}
                                     className="block py-3 px-4 font-medium text-center text-white bg-[#052570] hover:bg-indigo-500
                                      active:bg-indigo-700 active:shadow-none rounded shadow md:inline"
@@ -91,5 +107,10 @@ const Navbar = () => {
         </header>
     )
 }
+
+
+Navbar.propTypes = {
+    toggleContactForm: PropTypes.func.isRequired,
+};
 
 export default Navbar;
