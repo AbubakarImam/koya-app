@@ -42,7 +42,7 @@ const Faqs = () => {
     };
 
     return (
-        <section id="faqs" className='py-14 max-w-4xl mx-auto '>
+        <section id="faqs" className='py-14 max-w-4xl mx-auto my-16'>
             <div className="w-full mx-auto px-4 md:px-8">
                 <div className="space-y-5 text-center mx-auto">
                     <h3 className="text-white font-poppins font-extrabold text-4xl">
